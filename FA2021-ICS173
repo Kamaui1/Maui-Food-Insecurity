@@ -1,12 +1,18 @@
 print("Maui Food Insecurity")
 
+# Import the pandas library
 import pandas as pd
 import numpy as np
 import seaborn as sns
 import mat.plot.lib.pyplot as plt
 
-plt.scatter(x_Maui_Zip_Code, y_Percentage_in_need, color = 'red')
-plt.title('Maui Food Insecurity 2021')
+# title
+plt.title('Maui Food Insecurity 2021' fontsize = 20)
+
+# scatterplot
+plt.scatter(x_Maui_Zip_Code, y_Percentage_in_need, fontsize = 16, color = 'red')
+
+# axis labels
 plt.xlabel('Maui Zip Codes')
 plt.ylabel('Percentage in need')
 plt.show()
