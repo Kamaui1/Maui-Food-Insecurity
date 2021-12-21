@@ -2,7 +2,7 @@ print("Maui Food Insecurity")
 
 # Import the pandas library
 import pandas as pd
-Maui Food Insecurity = pd.read_csv('.../data/Food_Insecurity_Maui.csv') 
+Maui Food Insecurity = pd.read_csv('https://www.hawaiihealthmatters.org/index.php?module=indicators&controller=index&action=foodinsecurity') 
 
 
 import matplotlib.pyplot as plt
