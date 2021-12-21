@@ -2,9 +2,12 @@ print("Maui Food Insecurity")
 
 # Import the pandas library
 import pandas as pd
-import numpy as np
-import seaborn as sns
-import mat.plot.lib.pyplot as plt
+Maui Food Insecurity = pd.read_csv(Food_Insecurity_Maui.csv) 
+
+
+import matplotlib.pyplot as plt
+
+
 
 # title
 plt.title('Maui Food Insecurity 2021' fontsize = 20)
@@ -12,16 +15,38 @@ plt.title('Maui Food Insecurity 2021' fontsize = 20)
 # plot
 plt.plot(index["Maui Zip Code"], index["Value"])
 
-# scatterplot
-plt.scatter(x_Maui_Zip_Code, y_Percentage_in_need, fontsize = 16, color = 'red')
 
 # axis labels
 plt.xlabel('Maui Zip Codes')
 plt.ylabel('Percentage in need')
 
+
+
+import numpy as np
+import seaborn as sns
+
+Maui
+Zip Code,Index,Rank,County
+[("96770","97.5","5","Maui"
+"96729","92.8","5","Maui"
+"96757","88.3","5","Maui"
+"96748","86.3","5","Maui"
+"96763","45.0","4","Maui"
+"96732","29.3","3","Maui"
+"96793","19.7","2","Maui"
+"96753","16.8","2","Maui"
+"96713","15.8","2","Maui"
+"96761","14.6","2","Maui"
+"96790","13.2","2","Maui"
+"96768","12.6","2","Maui"
+"96779","8.0","1","Maui"
+"96708","7.2","1","Maui")]
+
+
+
 # save the image
 plt.savefig("Maui Food Insecurity.png")
-
+# show the image
 plt.show()
  
 # create dataset
