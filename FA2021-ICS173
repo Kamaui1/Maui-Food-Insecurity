@@ -20,27 +20,27 @@ plt.savefig("Maui Food Insecurity.png")
 # show the image
 plt.show()
 
-
+# Load the necessary modules
 import seaborn as sns
 
+# Load dataframe
 
-
-Maui
-Zip Code,Index,Rank,County
-[("96770","97.5","5","Maui"
-"96729","92.8","5","Maui"
-"96757","88.3","5","Maui"
-"96748","86.3","5","Maui"
-"96763","45.0","4","Maui"
-"96732","29.3","3","Maui"
-"96793","19.7","2","Maui"
-"96753","16.8","2","Maui"
-"96713","15.8","2","Maui"
-"96761","14.6","2","Maui"
-"96790","13.2","2","Maui"
-"96768","12.6","2","Maui"
-"96779","8.0","1","Maui"
-"96708","7.2","1","Maui")]
+df = ("Maui Food Insecurity")
+# Zip Code,Index,Rank 
+[("96770","97.5","5", "Mauna Loa" 
+"96729","92.8","5", "Ho'olehua" 
+"96757","88.3","5", "Kualapu'u" 
+"96748","86.3","5", "Kaunakakai"  
+"96763","45.0","4", "Lana'i" 
+"96732","29.3","3", "Kahului" 
+"96793","19.7","2", "Wailuku" 
+"96753","16.8","2", "Kulakai" 
+"96713","15.8","2", "Hana" 
+"96761","14.6","2", "Lahaina" 
+"96790","13.2","2","Kula"
+"96768","12.6","2","Makawao"
+"96779","8.0","1","Paia"
+"96708","7.2","1","Ha'iku")]
 
 
 
@@ -50,15 +50,15 @@ plt.savefig("Maui Food Insecurity.png")
 plt.show()
  
 # create dataset
-height = [7.2, 15.8, 92.8, 29.3, 86.3, 16.8, 14.6, 45, 12.6, 97.5, 8, 13.2, 19.7]
-bars = ('96708', '96713', '96729', '96732', '96748', '96753', '96761', '96763', '96768', '96770', '96779', '96790', '96793')
-x_pos = np.arange(len(bars))
+Percentage in need = [7.2, 15.8, 92.8, 29.3, 86.3, 16.8, 14.6, 45, 12.6, 97.5, 8, 13.2, 19.7]
+Maui Zip Code = ('96708', '96713', '96729', '96732', '96748', '96753', '96761', '96763', '96768', '96770', '96779', '96790', '96793')
+x_pos = np.arange(len(Maui Zip Code))
  
 # Create bars and choose color
 plt.bar(x_pos, height, color = (0.5,0.1,0.5,0.6))
  
 # Create names on the x axis
-plt.xticks(x_pos, bars)
+plt.xticks(x_pos, Maui Zip Code)
  
 # Show graph
 plt.show()
