@@ -1,0 +1,26 @@
+print("Maui Food Insecurity")
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import mat.plot.lib.pyplot as plt
+
+plt.scatter(x_Maui_Zip_Code, y_Percentage_in_need, color = 'red')
+plt.title('Maui Food Insecurity 2021')
+plt.xlabel('Maui Zip Codes')
+plt.ylabel('Percentage in need')
+plt.show()
+ 
+# create dataset
+height = [7.2, 15.8, 92.8, 29.3, 86.3, 16.8, 14.6, 45, 12.6, 97.5, 8, 13.2, 19.7]
+bars = ('96708', '96713', '96729', '96732', '96748', '96753', '96761', '96763', '96768', '96770', '96779', '96790', '96793')
+x_pos = np.arange(len(bars))
+ 
+# Create bars and choose color
+plt.bar(x_pos, height, color = (0.5,0.1,0.5,0.6))
+ 
+# Create names on the x axis
+plt.xticks(x_pos, bars)
+ 
+# Show graph
+plt.show()
