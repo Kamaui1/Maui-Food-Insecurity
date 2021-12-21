@@ -9,12 +9,19 @@ import mat.plot.lib.pyplot as plt
 # title
 plt.title('Maui Food Insecurity 2021' fontsize = 20)
 
+# plot
+plt.plot(index["Maui Zip Code"], index["Value"])
+
 # scatterplot
 plt.scatter(x_Maui_Zip_Code, y_Percentage_in_need, fontsize = 16, color = 'red')
 
 # axis labels
 plt.xlabel('Maui Zip Codes')
 plt.ylabel('Percentage in need')
+
+# save the image
+plt.savefig("Maui Food Insecurity.png")
+
 plt.show()
  
 # create dataset
