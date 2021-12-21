@@ -48,7 +48,11 @@ df = ("Maui Food Insecurity")
 plt.savefig("Maui Food Insecurity.png")
 # show the image
 plt.show()
- 
+
+
+# import Numpy
+import numpy as np
+
 # create dataset
 Percentage in need = [7.2, 15.8, 92.8, 29.3, 86.3, 16.8, 14.6, 45, 12.6, 97.5, 8, 13.2, 19.7]
 Maui Zip Code = ('96708', '96713', '96729', '96732', '96748', '96753', '96761', '96763', '96768', '96770', '96779', '96790', '96793')
